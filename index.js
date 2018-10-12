@@ -29,7 +29,8 @@ app.get('/users/search' , function(req , res){
     });
     
     res.render('users/index', {
-        users: matchedUsers
+        users: matchedUsers,
+        keyWord: q 
     });
 });
 
@@ -38,7 +39,7 @@ app.get('/users/create' , function(req , res){
 });
 
 app.post('/user/create' , function(req , res){
-    
+
 });
 
 app.listen(3000, function(){
