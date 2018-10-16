@@ -35,8 +35,6 @@ app.get('/users/search' , function(req , res){
     var matchedUsers = db.get('users').filter(function(user){
         return user.name.toLowerCase().indexOf(q.toLowerCase()) !== -1;
     }).value();
-    
-    console.log(matchedUsers);
 
     res.render('users/index', {
         users: matchedUsers,
