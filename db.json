@@ -1,33 +1,21 @@
 {
-  "user": {},
   "users": [
     {
-      "name": "thanh",
-      "id": "tqwhdaNnD"
-    },
-    {
       "name": "son",
-      "id": "R4YKMxTLU"
-    },
-    {
-      "name": "Thinh Pham",
       "phone": "123123",
-      "id": "v2XTJnvgB"
+      "id": "IGmR1CJwL"
     },
     {
-      "name": "hien",
-      "phone": "000111",
-      "id": "adZaNHRSl"
+      "name": "thinh pham",
+      "phone": "123123333",
+      "id": "jLInZSfRM"
     },
     {
-      "name": "huyen",
-      "phone": "123123",
-      "id": "u5VMdpQKd"
-    },
-    {
-      "name": "ngoc",
-      "phone": "111",
-      "id": "6SxKzx7LK"
+      "name": "Son Hong",
+      "phone": " 0934345102",
+      "id": "AeO0ll8XF",
+      "email": "sonbui1510@gmail.com",
+      "password": "123"
     }
   ]
 }
