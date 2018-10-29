@@ -34,6 +34,8 @@ module.exports.postLogin = function(req , res){
         });
     }
 
-    res.cookie('userId' , user.id); 
+    res.cookie('userId' , user.id , {
+        signed: true 
+    }); 
     res.redirect('/users');
 };
