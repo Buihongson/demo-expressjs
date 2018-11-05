@@ -3,24 +3,34 @@
     {
       "name": "son",
       "phone": "123123",
-      "id": "IGmR1CJwL"
+      "id": "IGmR1CJwL",
+      "avatar": "/images/avatar-user-1.jpg"
     },
     {
       "name": "thinh pham",
       "phone": "123123333",
-      "id": "jLInZSfRM"
+      "id": "jLInZSfRM",
+      "avatar": "/images/avatar-user-1.jpg"
     },
     {
       "name": "Son Hong",
       "phone": " 0934345102",
       "email": "sonbui1510@gmail.com",
       "id": "AeO0ll8XF",
-      "password": "e10adc3949ba59abbe56e057f20f883e"
+      "password": "e10adc3949ba59abbe56e057f20f883e",
+      "avatar": "/images/avatar-user-1.jpg"
     },
     {
       "name": "thinh pham",
       "phone": "123123333",
-      "id": "jLInZSfRM"
+      "id": "jLInZSfRM",
+      "avatar": "/images/avatar-user-1.jpg"
+    },
+    {
+      "name": "Ngoc Anh",
+      "phone": "12312",
+      "id": "JlwHoRhxi",
+      "avatar": "uploads/ea79b95c7570bb93bea07ffe69030f5e"
     }
   ],
   "products": [

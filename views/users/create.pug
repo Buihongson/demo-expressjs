@@ -8,13 +8,16 @@ block content
         each error in errors
             .alert.alert-danger= error
  
-    form(action="/users/create" , method="POST")
+    form(action="/users/create" , method="POST" , enctype="multipart/form-data")
         .form-group
             label(class="mr-2" , for="name") Name
             input#name.form-control(type="text" , name="name" , value=values ? values.name : "")
             
         .form-group
             label(class="mr-2" , for="phone") Phone
-            input#phone.form-control(type="text" , name="phone" , value=values ? values.phone : "")    
+            input#phone.form-control(type="text" , name="phone" , value=values ? values.phone : "")
+        .form-group
+            label(class="mr-2" , for="avatar") Avatar
+            input#avatar.form-control-file(type="file" , name="avatar") 
         
         button.btn.btn-primary Create
