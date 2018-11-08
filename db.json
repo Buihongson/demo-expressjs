@@ -334,5 +334,14 @@
       "image": "https://loremflickr.com/320/240",
       "description": "sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi in"
     }
+  ],
+  "sessions": [
+    {
+      "id": "9vsgn9_UF",
+      "cart": {
+        "49431658-9d2f-46e4-8edf-8e763a9c7b8b": 2,
+        "21022af9-5b43-4582-9150-7ed4e4253c09": 1
+      }
+    }
   ]
 }
