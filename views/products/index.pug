@@ -19,22 +19,22 @@ block content
                         p.card-text= product.description
                         a.btn.btn-primary(href='/cart/add' + product.id) Add to card
     
-    .row.mt-5
-        .row-md-4.m-auto
-            ul.pagination
-                each totalPage in totalPages
-                    if(totalPage === "Last")
-                        li.page-item
-                            a.page-link(href="/products" ? "?page="+ lastPage : "")= totalPage
-                    if(totalPage!="Last"&&totalPage!="First"&&totalPage!="Next"&&totalPage!="Prev")
-                        li.page-item
-                            a.page-link(href="/products" ? "?page="+ totalPage : "")= totalPage
-                    if(totalPage === "First")
-                        li.page-item
-                            a.page-link(href="/products" ? "?page="+ 1 : "")= totalPage
-                    if(totalPage === "Next")
-                        li.page-item
-                            a.page-link(href="/products" ? "?page="+ (page + 1) : "")= totalPage
-                    if(totalPage === "Prev")
-                        li.page-item
-                            a.page-link(href="/products" ? "?page="+ (page - 1) :"")= totalPage
+    //- .row.mt-5
+    //-     .row-md-4.m-auto
+    //-         ul.pagination
+    //-             each totalPage in totalPages
+    //-                 if(totalPage === "Last")
+    //-                     li.page-item
+    //-                         a.page-link(href="/products" ? "?page="+ lastPage : "")= totalPage
+    //-                 if(totalPage!="Last"&&totalPage!="First"&&totalPage!="Next"&&totalPage!="Prev")
+    //-                     li.page-item
+    //-                         a.page-link(href="/products" ? "?page="+ totalPage : "")= totalPage
+    //-                 if(totalPage === "First")
+    //-                     li.page-item
+    //-                         a.page-link(href="/products" ? "?page="+ 1 : "")= totalPage
+    //-                 if(totalPage === "Next")
+    //-                     li.page-item
+    //-                         a.page-link(href="/products" ? "?page="+ (page + 1) : "")= totalPage
+    //-                 if(totalPage === "Prev")
+    //-                     li.page-item
+    //-                         a.page-link(href="/products" ? "?page="+ (page - 1) :"")= totalPage

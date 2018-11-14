@@ -1,33 +1,39 @@
-var db = require('../db');
+var Product = require('../models/products.model');
 
-module.exports.index = function (req, res) {
-    var page = parseInt(req.query.page) || 1; //n
-    var perPage = 8; //x
-    var arr = [];
+module.exports.index = async function (req, res) {
 
-    var start = (page - 1) * perPage;
-    var end = page * perPage;
-
-    var totalProduct = Math.ceil(db.get('products').value().length / perPage);
-
-    if (page === 1) {
-        arr.push(page, page + 1, page + 2, 'Next', 'Last')
-    }
-
-    if (page > 1 && page < totalProduct) {
-        arr.push('First', 'Prev', page - 1, page, page + 1, 'Next', 'Last')
-    }
-
-    if (page === totalProduct) {
-        arr.push('First', 'Prev', page - 2, page - 1, page)
-    }
-
-    res.render('products', {
-        products: db.get('products').value().slice(start, end),
-        page: page,
-        totalPages: arr,
-        lastPage: totalProduct
+    var products = await Product.find();
+    res.render('products/index', {
+       products: products 
     });
+
+    // var page = parseInt(req.query.page) || 1; //n
+    // var perPage = 8; //x
+    // var arr = [];
+
+    // var start = (page - 1) * perPage;
+    // var end = page * perPage;
+
+    // var totalProduct = Math.ceil(db.get('products').value().length / perPage);
+
+    // if (page === 1) {
+    //     arr.push(page, page + 1, page + 2, 'Next', 'Last')
+    // }
+
+    // if (page > 1 && page < totalProduct) {
+    //     arr.push('First', 'Prev', page - 1, page, page + 1, 'Next', 'Last')
+    // }
+
+    // if (page === totalProduct) {
+    //     arr.push('First', 'Prev', page - 2, page - 1, page)
+    // }
+
+    // res.render('products', {
+    //     products: db.get('products').value().slice(start, end),
+    //     page: page,
+    //     totalPages: arr,
+    //     lastPage: totalProduct
+    // });
 };
 
 // module.exports.search = function (req, res) {

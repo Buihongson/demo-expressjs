@@ -6,7 +6,7 @@
 }
 
 .card{
-    grid-column: span 3;
+    /* grid-column: span 3; */
     text-align: center;
     border-radius: 20px;
     box-shadow: .4px 4px 12px rgba(0, 0, 0, 0.2);

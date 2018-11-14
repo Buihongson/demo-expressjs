@@ -11,11 +11,18 @@ module.exports.addToCart = function (req, res, next) {
         return;
     }
 
+    /* get productId in db, if have productId then get quantity of productId
+    *  else default for productId is 0
+    */
     var count = db.get('sessions')
         .find({ id: sessionId })
         .get('cart.' + productId, 0)
         .value();
 
+    /*
+    *   Write to db if user add to card prodcuts 
+    *   and plus quantity of productId if productId haved in db
+    */
     db.get('sessions')
         .find({ id: sessionId })
         .set('cart.' + productId, count + 1)

@@ -20,7 +20,7 @@ router.post('/create',
     validate.postCreate,
     controller.postCreate
 );
-
+    
 
 module.exports = router;
 
